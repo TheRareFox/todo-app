@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>To-do app</title>
+        <link rel="stylesheet" text=text/css href="static/styles/index.css">
+    </head>
+    <body>
+        <h1>Welcome to the To-do App</h1>
+        <h1>To-do: </h1>
+        <a href = "/addtodo" class = "button">Add a To-do!</a>
+
+        
+        
+        {% for i in fail %}
+        <div class = "box">
+            <ul>
+                
+                <a  href = "/{{i[0]}}" style="text-decoration:none;">
+                <li class = "fail">
+                    <div class = "left">
+                        <span class = "fcircle"></span>
+                    </div>
+                    <h3>
+                    Due by {{i[1]}}
+                    </h3>
+                    <p>
+                    {{i[2]}}
+                    </p>
+                </li>
+                </a>
+            </ul>
+        </div>
+        {% endfor %}
+        {% for i in suc %}
+        <div class = "box">
+            <ul>
+                <a  href = "/{{i[0]}}" style="text-decoration:none;">
+                <li class = "suc">
+                    <div class = "left">
+                        <span class = "scircle"></span>
+                    </div>
+                    <h3>
+                    Due by {{i[1]}}
+                    </h3>
+                    <p>
+                    {{i[2]}}
+                    </p>
+                </li>
+                </a>            
+            </ul>
+        </div>
+        {% endfor %}
+    </body>
+</html>

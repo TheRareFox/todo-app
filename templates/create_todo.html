@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" text=text/css href="static/styles/todo.css">
+    <title>To-do app</title>
+</head>
+<body>
+    <div class = "form">
+    <form action = "/submit" id = "usrform">
+        Date due: 
+        <input type = "date" id="date" name="date" value="2020-01-01">
+        <br>
+        <br>
+        Message: 
+        <br>
+        
+        <textarea rows="4" cols="50" id = "message" name="message" form="usrform"></textarea>
+        <!--<input type = "text" id = "message" name = "message">-->
+        <br>
+        <input type = "submit" value = "submit form">
+    </form>
+    </div>
+</body>
+</html>

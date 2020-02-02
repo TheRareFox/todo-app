@@ -1,0 +1,81 @@
+body{
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F6y-OAsRZbas%2Fmaxresdefault.jpg&f=1&nofb=1");
+}
+  .button{
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    bottom: 120px;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+li p {
+    font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  }
+
+  li {
+    padding: 10px;
+    overflow: auto;
+    width: 80%;
+  }
+  
+  li:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+
+
+
+  h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    margin-left: auto;
+    text-align: left;
+    position: relative;
+    left: 10px;
+  }
+
+  h1{
+      text-align: center;
+    }
+
+  div.box{
+    float: center;
+    border: 3px solid white;
+    background-color: lightblue;
+    margin-left: auto;
+    width: 755px;
+    margin-right: auto;
+  }
+
+  span.scircle{
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    }
+
+  span.fcircle{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .left{
+    float: left;
+    width: 4%;
+    padding-top: 24px;
+  }

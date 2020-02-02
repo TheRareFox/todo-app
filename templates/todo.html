@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo no.{{todo[0]}}</title>
+    <link rel="stylesheet" text=text/css href="static/styles/todo.css">
+</head>
+<body onload="blink();">
+    <h1>To do by: {{todo[1]}}</h1>
+    <br>
+    <h3>{{todo[2]}}</h3>
+    <br>
+    <div style = "text-align: center;">
+        <a href = "/done/{{todo[0]}}" class = "button">Finished the task!</a>
+    </div>
+    <br>
+    <br>
+    {% if due == True %}
+    <div id = "warning" class="warning">
+        <h2>OVERDUE WORK!!</h2>
+    </div>
+    {% endif %}
+
+    <script>
+        function blink() {
+           var f = document.getElementById('warning');
+           setInterval(function() {
+              f.style.display = (f.style.display == 'none' ? '' : 'none');
+           }, 100);
+        }
+    </script>
+    
+</body>
+
+    
+</html>
